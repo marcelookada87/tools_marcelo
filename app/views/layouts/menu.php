@@ -19,6 +19,12 @@ $menuItems = [
         'active' => ($currentPage ?? '') === 'users'
     ],
     [
+        'title' => 'Branch Name',
+        'icon' => 'bi-git',
+        'url' => 'index.php?page=branch-name',
+        'active' => ($currentPage ?? '') === 'branch-name'
+    ],
+    [
         'title' => 'Configurações',
         'icon' => 'bi-gear',
         'url' => 'index.php?page=settings',

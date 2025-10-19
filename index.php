@@ -43,6 +43,10 @@ switch ($page) {
         require_once __DIR__ . '/app/views/pages/users.php';
         break;
         
+    case 'branch-name':
+        require_once __DIR__ . '/app/views/pages/branch-name.php';
+        break;
+        
     case 'settings':
         require_once __DIR__ . '/app/views/pages/settings.php';
         break;
