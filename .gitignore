@@ -1,0 +1,32 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Configurações locais
+app/config/config.local.php
+
+# Dependências
+vendor/
+node_modules/
+
+# Temporários
+temp/
+tmp/
+cache/
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
