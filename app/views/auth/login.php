@@ -41,12 +41,6 @@ require_once __DIR__ . '/../layouts/header.php';
                 <i class="bi bi-box-arrow-in-right"></i> Entrar
             </button>
         </form>
-        
-        <div class="mt-3 text-center">
-            <small class="text-muted">
-                Usuário padrão: <strong>admin</strong> | Senha: <strong>admin123</strong>
-            </small>
-        </div>
     </div>
 </div>
 
