@@ -31,8 +31,14 @@ class AuthController {
             }
 
             if ($this->user->authenticate($username, $password)) {
-                // Define o tempo de vida da sessão: 1 ano
-                $lifetime = 365 * 24 * 60 * 60;
+                // Define o tempo de vida da sessão
+                if ($remember) {
+                    // 1 ano se "Lembrar-me" estiver marcado
+                    $lifetime = 365 * 24 * 60 * 60;
+                } else {
+                    // 30 dias se não estiver marcado
+                    $lifetime = 30 * 24 * 60 * 60;
+                }
                 
                 // Configura o cookie de sessão com o tempo definido
                 $params = session_get_cookie_params();

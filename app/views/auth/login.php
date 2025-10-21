@@ -32,6 +32,11 @@ require_once __DIR__ . '/../layouts/header.php';
                 </div>
             </div>
             
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="remember" name="remember" value="1">
+                <label class="form-check-label" for="remember">Lembrar-me por 1 ano</label>
+            </div>
+            
             <button type="submit" class="btn btn-primary w-100">
                 <i class="bi bi-box-arrow-in-right"></i> Entrar
             </button>
