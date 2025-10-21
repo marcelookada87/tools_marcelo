@@ -8,10 +8,6 @@ if (PHP_SAPI !== 'cli') {
     ini_set('session.cookie_httponly', 1);
     ini_set('session.use_only_cookies', 1);
     ini_set('session.cookie_secure', 0); // Defina como 1 em produção com HTTPS
-    
-    // Tempo padrão de vida da sessão (1 ano)
-    ini_set('session.gc_maxlifetime', 365 * 24 * 60 * 60);
-    ini_set('session.cookie_lifetime', 365 * 24 * 60 * 60);
 
     // Iniciar sessão
     if (session_status() === PHP_SESSION_NONE) {
