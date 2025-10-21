@@ -31,3 +31,4 @@ uploads/*
 !uploads/.gitkeep
 
 app\config\config.php
+app/config/config.php
